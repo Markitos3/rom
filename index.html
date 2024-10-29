@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="./#">
+                <img src="./terminal.png" alt="Logo" style="height: 40px;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./#">Inicio</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+                <li><a href="./contactanos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="content-box">
+            <h1>Comandos</h1>
+            <p>
+                Un comando en la terminal sirve para indicarle al sistema operativo que
+                realice una acción específica, como copiar archivos, navegar entre
+                carpetas, instalar software, o incluso automatizar tareas. Cada comando
+                tiene una función particular y se escribe en la línea de comandos de la
+                terminal, que es una interfaz de texto para interactuar directamente con el
+                sistema operativo.
+            </p>
+        </div>
+
+        <div class="holita">
+        <h1 class="subheading">Lista de comandos</h1>
+    </div>
+        <div class="command-box">
+            <strong>ls</strong>: listar el contenido de un directorio
+            <button class="copy-button" onclick="copyCommands('ls: listar el contenido de un directorio')">Copiar Comando</button>
+       </div>
+        <div class="command-box">
+            <strong>pwd</strong>: muestra la ruta en la que te situas actualmente
+            <button class="copy-button" onclick="copyCommands('pwd: muestra la ruta en la que te situas actualmente')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>cd</strong>: moverse entre directorios
+            <button class="copy-button" onclick="copyCommands('cd: moverse entre directorios')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>mkdir</strong>: crea un nuevo directorio
+            <button class="copy-button" onclick="copyCommands('mkdir: crea un nuevo directorio')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>rm</strong>: eliminar un archivo
+            <button class="copy-button" onclick="copyCommands('rm: eliminar un archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>cp</strong>: copiar un archivo
+            <button class="copy-button" onclick="copyCommands('cp: copiar un archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>mv</strong>: mover o renombrar archivos y directorios
+            <button class="copy-button" onclick="copyCommands('mv: mover o renombrar archivos y directorios')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>touch</strong>: crea un nuevo archivo vacío
+            <button class="copy-button" onclick="copyCommands('touch: crea un nuevo archivo vacío')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>nano</strong>: crear y editar un archivo de texto
+            <button class="copy-button" onclick="copyCommands('nano: crear y editar un archivo de texto')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>cat</strong>: muestra el contenido de un archivo
+            <button class="copy-button" onclick="copyCommands('cat: muestra el contenido de un archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>head</strong>: muestra las primeras 10 líneas del archivo
+            <button class="copy-button" onclick="copyCommands('head: muestra las primeras 10 líneas del archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>tail</strong>: muestra las últimas 10 líneas de un archivo
+            <button class="copy-button" onclick="copyCommands('tail: muestra las últimas 10 líneas de un archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>sudo</strong>: ejecutar comandos como superusuario
+            <button class="copy-button" onclick="copyCommands('sudo: ejecutar comandos como superusuario')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>su</strong>: ejecuta comandos en el usuario actual como otro usuario
+            <button class="copy-button" onclick="copyCommands('su: ejecuta comandos en el usuario actual como otro usuario')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>chmod</strong>: modifica los permisos de lectura, escritura y ejecución de un archivo
+            <button class="copy-button" onclick="copyCommands('chmod: modifica los permisos de lectura, escritura y ejecución de un archivo')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>chown</strong>: cambia la propiedad de un archivo o directorio
+            <button class="copy-button" onclick="copyCommands('chown: cambia la propiedad de un archivo o directorio')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>useradd/adduser</strong>: crea un usuario
+            <button class="copy-button" onclick="copyCommands('useradd/adduser: crea un usuario')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>userdel/deluser</strong>: elimina un usuario
+            <button class="copy-button" onclick="copyCommands('userdel/deluser: elimina un usuario')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>tar</strong>: archiva ficheros sin compresión en formato TAR
+            <button class="copy-button" onclick="copyCommands('tar: archiva ficheros sin compresión en formato TAR')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>apt/apt-get</strong>: gestiona las bibliotecas de paquetes de las distribuciones Debian
+            <button class="copy-button" onclick="copyCommands('apt/apt-get: gestiona las bibliotecas de paquetes de las distribuciones Debian')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>zip/unzip</strong>: crea y extrae un archivo ZIP
+            <button class="copy-button" onclick="copyCommands('zip/unzip: crea y extrae un archivo ZIP')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>systemctl</strong>: gestiona los servicios del sistema
+            <button class="copy-button" onclick="copyCommands('systemctl: gestiona los servicios del sistema')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>dpkg</strong>: administra paquetes a través de su instalación, eliminación y compilación.
+            <button class="copy-button" onclick="copyCommands('dpkg: administra paquetes a través de su instalación, eliminación y compilación.')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>ping</strong>: comprueba la conectividad de red del sistema
+            <button class="copy-button" onclick="copyCommands('ping: comprueba la conectividad de red del sistema')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>curl</strong>: transmite datos entre servidores utilizando URLs
+            <button class="copy-button" onclick="copyCommands('curl: transmite datos entre servidores utilizando URLs')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>ifconfig</strong>: muestra las interfaces de red del sistema y sus configuraciones
+            <button class="copy-button" onclick="copyCommands('ifconfig: muestra las interfaces de red del sistema y sus configuraciones')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>netstat</strong>: muestra la información de red del sistema, como enrutamiento y sockets
+            <button class="copy-button" onclick="copyCommands('netstat: muestra la información de red del sistema, como enrutamiento y sockets')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>traceroute</strong>: rastrea los saltos de un paquete hasta su destino
+            <button class="copy-button" onclick="copyCommands('traceroute: rastrea los saltos de un paquete hasta su destino')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>nslookup</strong>: consulta la dirección IP de un dominio y viceversa
+            <button class="copy-button" onclick="copyCommands('nslookup: consulta la dirección IP de un dominio y viceversa')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>dig</strong>: muestra información del DNS
+            <button class="copy-button" onclick="copyCommands('dig: muestra información del DNS')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>time</strong>: calcula el tiempo de ejecución de los comandos
+            <button class="copy-button" onclick="copyCommands('time: calcula el tiempo de ejecución de los comandos')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>shutdown</strong>: apaga o reinicia el sistema
+            <button class="copy-button" onclick="copyCommands('shutdown: apaga o reinicia el sistema')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>scp</strong>: copia de forma segura archivos o directorios a otro sistema
+            <button class="copy-button" onclick="copyCommands('scp: copia de forma segura archivos o directorios a otro sistema')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>history</strong>: muestra el historial de comandos ejecutados
+            <button class="copy-button" onclick="copyCommands('history: muestra el historial de comandos ejecutados')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>man</strong>: muestra el manual de un comando
+            <button class="copy-button" onclick="copyCommands('man: muestra el manual de un comando')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>df</strong>: muestra el uso general de espacio en disco del sistema
+            <button class="copy-button" onclick="copyCommands('df: muestra el uso general de espacio en disco del sistema')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>top</strong>: muestra los procesos en ejecución
+            <button class="copy-button" onclick="copyCommands('top: muestra los procesos en ejecución')">Copiar Comando</button>
+        </div>
+        <div class="command-box">
+            <strong>kill</strong>: finaliza un proceso en ejecución
+            <button class="copy-button" onclick="copyCommands('kill: finaliza un proceso en ejecución')">Copiar Comando</button>
+        </div>
+
+    </div>
+    
+    <div class="additional-content"></div>
+
+    <script>
+        function copyCommands(command) {
+            navigator.clipboard.writeText(command)
+                .then(() => alert('Comando copiado al portapapeles!'))
+                .catch(err => console.error('Error al copiar: ', err));
+        }
+    </script>
+
+</body>
+</html>

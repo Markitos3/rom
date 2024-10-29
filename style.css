@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;900&display=swap');
+
+* {
+    font-family: "Inconsolata", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(214, 214, 214);
+    background-attachment: fixed; 
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+nav > ul > li > a:hover {
+    color: rgb(70, 70, 70);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.content-box {
+    background: rgba(218, 218, 218, 0.7); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(153, 153, 153);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+.content-box p, h1 {
+    color: rgb(70, 70, 70);
+}
+.command-box {
+    position: relative;
+    background: rgba(218, 218, 218, 0.7); /* Fondo semi-transparente */
+    border: 2px solid rgb(153, 153, 153);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    color: rgb(70, 70, 70);
+}
+
+
+.copy-button {
+    padding: 10px 15px;
+    background-color: rgba(218, 218, 218, 0.7);
+    color: rgb(70, 70, 70);
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 3%;
+}
+
+.copy-button:hover {
+    background-color: rgb(78, 78, 78);
+    color: rgb(218, 218, 218);
+    border: rgb(78, 78, 78);
+    transition: 0.3s;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.holita{
+    margin-top: 2%;
+}

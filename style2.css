@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;900&display=swap');
+
+* {
+    font-family: "Inconsolata", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(218, 218, 218, 0.7);
+    background-attachment: fixed; 
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+nav > ul > li > a:hover {
+    color: rgb(70, 70, 70);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.hola {
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(218, 218, 218, 0.7);
+    backdrop-filter: blur(10px);
+    color: rgb(70, 70, 70);/* Color de texto más oscuro */
+}
+
+.command-box {
+    position: relative;
+    background: rgba(218, 218, 218, 0.7); /* Fondo semi-transparente */
+    border: 2px solid rgb(153, 153, 153);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    color: rgb(70, 70, 70);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
